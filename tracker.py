@@ -8,6 +8,7 @@ DATA_FILE = Path(__file__).parent / "data" / "records.json"
 
 def save_records(records):
     """把 records（列表）写入 JSON 文件。"""
+    DATA_FILE.parent.mkdir(parents=True, exist_ok=True)
     with open(DATA_FILE, "w", encoding="utf-8") as f:
         json.dump(records, f, ensure_ascii=False, indent=2)
 

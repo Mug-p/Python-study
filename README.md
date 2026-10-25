@@ -50,7 +50,7 @@ python -m pytest -v
 正常情况下应看到：
 
 ```text
-5 passed
+6 passed
 ```
 
 测试使用各自创建的列表，不会读取或修改正式的 `data/records.json`。

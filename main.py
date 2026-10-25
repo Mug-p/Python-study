@@ -15,6 +15,7 @@ def add_record_from_input(records):
     date = input("请输入学习日期：")
     topic = input("请输入学习主题：")
     minutes_text = input("请输入学习分钟数：")
+    category = input("请输入学习类别：")
 
     try:
         minutes = int(minutes_text)
@@ -23,7 +24,7 @@ def add_record_from_input(records):
         return
 
     try:
-        add_record(records, date, topic, minutes)
+        add_record(records, date, topic, minutes, category)
     except ValueError as error:
         print("添加失败：", error)
         return
