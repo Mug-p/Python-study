@@ -67,3 +67,4 @@ def search_records(records, keyword):
 def calculate_total_minutes(records):
     """统计所有记录的学习分钟数。"""
     return sum(record["minutes"] for record in records)
+
